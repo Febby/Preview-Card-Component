@@ -1,8 +1,50 @@
+//Variables
+
+$light-gray: hsl(0, 0%, 95%);
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+
+//Reset
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: $light-gray;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+}
+
+p {
+  //   color: $transparent-white;
+}
+
+// Section
+
+.container {
+  width: 95%;
+  //desktop
+  max-width: 1440px;
+  margin: 0px auto;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: '. . .';
+}
+
 //attribution
 .attribution {
+  display: none;
   font-size: 11px;
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
